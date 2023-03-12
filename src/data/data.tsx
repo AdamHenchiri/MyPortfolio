@@ -4,29 +4,29 @@ import {
   DownloadIcon,
   FlagIcon,
   MapIcon,
-  OfficeBuildingIcon,
-  SparklesIcon,
+ // OfficeBuildingIcon,
+ // SparklesIcon,
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import porfolioImage3 from '../images/portfolio/portfolio-3.gif';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+/*import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';*/
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+//import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -36,7 +36,7 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
+  //TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -53,13 +53,13 @@ export const homePageMeta: HomepageMeta = {
  */
 export const SectionId = {
   Hero: 'hero',
-  About: 'about',
+  About: 'à propos de moi',
   Contact: 'contact',
-  Portfolio: 'portfolio',
-  Resume: 'resume',
+  Portfolio: 'mes projets',
+  Resume: 'mon parcours',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  //Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -69,32 +69,25 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  salut: `Salut !`,
+  name: `Moi c'est Adam HENCHIRI.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+      Jeune   <strong className="text-stone-100">passionné</strong> par les nouvelle technologies .
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        <strong className="text-stone-100">Étudiant</strong>,
+        en bachelor informatique .
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: './assets/resume.pdf',
+      text: 'Mon CV',
       primary: true,
       Icon: DownloadIcon,
-    },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
     },
   ],
 };
@@ -104,16 +97,12 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Je suis étudiant en 2ème année de BUT informatique spécialisé en réalisation d'applications, conception, développement et validation. Un cursus très enrichissant qui me permet de découvrir concrètement toutes les facettes de l'élaboration de projets IT.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Adresse', text: 'Sète, Occitanie', Icon: MapIcon},
+    {label: 'Age', text: '20', Icon: CalendarIcon},
+    {label: 'Nationalitée', text: 'Française / Tunisienne', Icon: FlagIcon},
+    {label: 'étude', text: 'Institut Universitaire Téchnologique de Montpellier/Sète', Icon: AcademicCapIcon},
   ],
 };
 
@@ -122,69 +111,86 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Langue',
     skills: [
       {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
+        name: 'Français',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'Arabe',
+        level: 9,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Anglais',
+        level: 7,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Développement frontend ',
     skills: [
       {
-        name: 'Node.js',
+        name: 'HTML',
+        level: 9,
+      },
+      {
+        name: 'CSS',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'JAVASCRIPT',
+        level: 6,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'REACT',
+        level: 1,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Développement backend',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'JAVA',
+        level: 8,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'PHP',
+        level: 8,
       },
       {
-        name: 'Swift',
+        name: 'C',
+        level: 5,
+      },
+      {
+        name: 'Python',
+        level: 5,
+      },
+      {
+        name: 'Node.js',
+        level: 1,
+      },
+    ],
+  },
+  {
+    name: 'Base de Donnée',
+    skills: [
+      {
+        name: 'SQL',
+        level: 8,
+      },
+      {
+        name: 'plSql',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Développement Mobile',
+    skills: [
+      {
+        name: 'Android',
         level: 3,
       },
     ],
@@ -196,21 +202,21 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Jeu du Scrabble',
+    description: "Pour appliquer les bases de la programmation orienté objet en JAVA j'ai développer avec mon collaborateur Pierre.G un jeu de scrabble sur terminal.",
+    url: 'https://github.com/AdamHenchiri/Scrabble',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Jeu les Aventuriers Du Rail',
+    description: 'Pour en savoir plus, Vous pouvez retrouver un carrousel explicatif en cliquant ici.',
+    url: 'https://view.genial.ly/6404c7dd0d230700130d1953/presentation-magnetic-whiteboard-presentation',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Your Voice',
+    description: "Une application web développer en PhP Vanilla, un projet que j'ai éxecuter en tant que Scrum Master qui vise a obtenir une plateform de vote libre sur différents sujets.",
+    url: 'https://webinfo.iutmontp.univ-montp2.fr/~henchiria/yourvoice/web/frontController.php',
     image: porfolioImage3,
   },
   {
@@ -219,7 +225,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://timbaker.me',
     image: porfolioImage4,
   },
-  {
+ /* {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
@@ -260,7 +266,7 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
     image: porfolioImage11,
-  },
+  },*/
 ];
 
 /**
@@ -268,20 +274,28 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'SEPT 2022 - JUIN 2023    ',
+    location: 'IUT de Montpellier-Sète, France ',
+    title: '2eme année en BUT informatique',
+    content: <p>2eme année en Bachelor Universitaire Technologique en informatique parcours Réalisation d'applications : conception,
+    développement, validation. semestre 3 validé avec 13.79 de moyenne</p>
+    ,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'SEPT 2021 - JUIN 2022',
+    location: 'IUT de Montpellier-Sète, France ',
+    title: '1er année en BUT informatique',
+    content: <p>1er année en Bachelor Universitaire Technologique en informatique validée avec 13.69 de moyenne géneral.</p>,
+  },
+  {
+    date: 'SEPT 2020 - JUIN 2021',
+    location: 'Lycée Houmt-souk Djerba, Tunisie',
+    title: 'Bac option informatique',
+    content: <p>Baccalauréat général option informtique obtenue avec MENTION assez bien.</p>,
   },
 ];
 
-export const experience: TimelineItem[] = [
+/*export const experience: TimelineItem[] = [
   {
     date: 'March 2010 - Present',
     location: 'Awesome Development Company',
@@ -305,10 +319,12 @@ export const experience: TimelineItem[] = [
     ),
   },
 ];
+*/
 
 /**
  * Testimonial section
  */
+/*
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
@@ -329,34 +345,29 @@ export const testimonial: TestimonialSection = {
     },
   ],
 };
-
+*/
 /**
  * Contact section
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: '',
+  description: "Vous avez une question ? N'hésitez pas à me contacter !",
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'adam.henchiri@etu.umontpellier.fr',
+      href: 'mailto:adam.henchiri@etu.umontpellier.fr',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Sète, France',
+      href : 'https://goo.gl/maps/FLyagfNp59i3Pw3j7'
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'AdamHenchiri',
+      href: 'https://github.com/AdamHenchiri',
     },
   ],
 };
@@ -365,9 +376,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/AdamHenchiri'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/adam-henchiri'},
 ];

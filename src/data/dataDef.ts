@@ -22,6 +22,7 @@ export interface HomepageMeta {
  */
 export interface Hero {
   imageSrc: string;
+  salut: string;
   name: string;
   description: JSX.Element;
   actions: HeroActionItem[];
@@ -96,6 +97,7 @@ export interface TimelineItem {
 /**
  * Testimonial section
  */
+/*
 export interface TestimonialSection {
   imageSrc?: string | StaticImageData;
   testimonials: Testimonial[];
@@ -106,6 +108,7 @@ export interface Testimonial {
   name: string;
   text: string;
 }
+*/
 
 /**
  * Contact section
