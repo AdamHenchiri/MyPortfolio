@@ -18,8 +18,8 @@ import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.gif';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-/*import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+/*import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
@@ -203,7 +203,7 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Jeu du Scrabble',
-    description: "Pour appliquer les bases de la programmation orienté objet en JAVA j'ai développer avec mon collaborateur Pierre.G un jeu de scrabble sur terminal.",
+    description: "J'ai développé mes compétences en programmation orientée objet en JAVA en apprenant les concepts fondamentaux tels que les classes, l'héritage, le polymorphisme et bien d'autres notions. Cette connaissance m'a permis d'évoluer en POO.",
     url: 'https://github.com/AdamHenchiri/Scrabble',
     image: porfolioImage1,
   },
@@ -220,18 +220,18 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Site du laboratoire de recherche urred',
+    description: "J'ai développé un site vitrine pour l'unité de recherche <Research, Enterprise and Decision> en utilisant les langages HTML, CSS et JavaScript. Unsite web qui a pour but de présenter de manière claire et attractive les activités, les projets et les articles de ce laboratoire",
+    url: 'http://www.ur-red.net/index.html#',
     image: porfolioImage4,
   },
- /* {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+ {
+    title: "La nuit de l'info",
+    description: "J'ai participé à la Nuit de l'Info en 2021 et 2022, qui est une compétition nationale rassemblant des étudiants, des enseignants et des entreprises pour travailler ensemble sur le développement d'une application web. Cette nuit a lieu chaque année, du premier jeudi de décembre, au coucher du soleil, jusqu'au lever du soleil le lendemain matin. Les participants ont toute la nuit pour proposer, implémenter et packager une application Web 2.0. Lors de ma première participation en 2021, le thème était <L'informatique à l'aide de l'histoire des sauvetages en mer>. J'ai travaillé sur un défi de génération de NFT en utilisant un script dans le but de soutenir les associations SNSM et Corsaires Dunkerquois. Lors de ma seconde participation en 2022, le thème était <SexInfo, la prévention par le jeu>. Cette fois-ci, j'ai travaillé sur la création d'un honeypot pour notre site de serious game  une technique de sécurité informatique qui consiste à créer une fausse vulnérabilité ou un faux système d'authentification pour attirer des cybercriminels et leur faire perdre leur temps en leur faisant croire qu'ils ont trouvé une faille à exploiter.",
+    url: 'https://openbadgepassport.com/app/profile/198737',
     image: porfolioImage5,
   },
-  {
+   /*{
     title: 'Project title 6',
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
