@@ -161,7 +161,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Symfony',
-        level: '5',
+        level: 5,
       },
       {
         name: 'C',
