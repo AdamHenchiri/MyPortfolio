@@ -13,7 +13,8 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Vous retrouverez ici quelqu'un de mes projets</h2>
+        <h2 className="self-center text-xl font-bold text-white">Vous trouverez ici certains de mes projets.</h2>
+        <h3 className="self-center text-xl text-white">N'hésitez pas à placer votre curseur sur les images pour une brève explication et à cliquez pour en savoir plus.</h3>
         <div className=" w-full columns-1 md:columns-1 lg:columns-2">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;

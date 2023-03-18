@@ -160,6 +160,10 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
+        name: 'Symfony',
+        level: '5',
+      },
+      {
         name: 'C',
         level: 5,
       },
@@ -190,7 +194,7 @@ export const skills: SkillGroup[] = [
     name: 'Développement Mobile',
     skills: [
       {
-        name: 'Android',
+        name: 'Android/AndroidStudio',
         level: 3,
       },
     ],
@@ -203,7 +207,7 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Jeu du Scrabble',
-    description: "J'ai développé mes compétences en programmation orientée objet en JAVA en apprenant les concepts fondamentaux tels que les classes, l'héritage, le polymorphisme et bien d'autres notions. Cette connaissance m'a permis d'évoluer en POO.",
+    description: "J'ai développé mes compétences en programmation orientée objet en JAVA en apprenant les concepts fondamentaux tels que les classes, l'héritage, le polymorphisme et bien d'autres notions. Ce projet réalisé avec Pierre.G m'a permis d'évoluer en POO.",
     url: 'https://github.com/AdamHenchiri/Scrabble',
     image: porfolioImage1,
   },
